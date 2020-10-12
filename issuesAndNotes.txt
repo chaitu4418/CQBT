@@ -1,0 +1,2 @@
+Iss- 1
+Added the map points data and added the points by changing the VolumeVectorShapeData. But I don't get the message like. 'U are leaving out of Zone'.
