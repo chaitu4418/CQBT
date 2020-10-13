@@ -1,0 +1,6 @@
+- GUID for conquest
+    - cqLogicPartitionGuid  Guid('84DBB672-878F-4892-92A9-57E86F60793D')
+    - cqMapAreaGuid  Guid('A53002A3-0C7B-4C1B-B7EB-7A108FA5709F')
+- GUID for TDM
+    - tdmLogicPartitionGuid Guid('9D089A81-9D75-4759-AF58-D2F91C1D095A')
+    - tdmMapAreaGuid Guid('E9B86E95-2090-4C6B-97D5-98DEA5544847')
