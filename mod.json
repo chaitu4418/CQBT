@@ -4,7 +4,7 @@
   "Description": "CQBT mode for XP4_FD - Markaz Monolith",
   "URL": "",
   "Version": "0",
-  "HasWebUI": false,
+  "HasWebUI": true,
   "HasVeniceEXT": true,
   "Tags": ["cqbt"]
 }

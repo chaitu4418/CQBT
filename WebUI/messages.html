@@ -1,0 +1,184 @@
+<html>
+
+<body>
+
+<style type="text/css">
+
+     @font-face {
+        font-family: purista;
+        src: url("assets/fonts/purista_medium.otf");
+      }
+
+      @font-face {
+        font-family: purista;
+        src: url("assets/fonts/purista_bold.otf");
+        font-weight: bold;
+      }
+
+      * {
+        font-family: purista;
+      }
+
+      .infobox {
+        position:absolute;
+        top:6%;
+        left:4%;
+        border-style:solid;
+        border-width:0px;
+        width:25%;
+        height:14%;
+        display:none;
+        background-image: linear-gradient(#000000,#000000);
+        text-align: left;
+        color: #ffffff;
+        opacity: 0.6;
+        transform: skewy(3deg);
+        animation: grain steps(10) infinite;
+        box-shadow: 0px 0px 5px 10px #5f6061;
+      }
+
+      #minimap {
+        position:absolute;
+        top:6%;
+        right:4%;
+        border-style:none;
+        border-color:#000000;
+        border-radius: 50%;
+        width:15%;
+        height:30%;
+        background-image: linear-gradient(#000000, #000000);
+        opacity: 0.3;
+        display:none;
+        transform: skewx(-2deg);
+      }
+
+      .transmission {
+        font-weight: 500;
+        font-size: 14px;
+        background-color:#ffffff;
+        opacity: 0.8;
+        width:90%;
+        height:16%;
+        color:#000000;
+        animation: flicker 3s linear infinite;
+      }
+      .subpoint{
+        font-size:17px;
+        padding-left:3%;
+        padding-bottom:2%;
+        letter-spacing: 1.25px;
+        animation: flicker 1s linear infinite;
+      }
+
+      .mainpoint{
+        font-size:23px;
+        padding-bottom:1%;
+        letter-spacing: 1.25px;
+        animation: flicker 3s linear infinite;
+      }
+
+
+      @keyframes flicker {
+	    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		    opacity: .99;
+		    text-shadow: -1px -1px 0 $outline, 1px -1px 0 $outline, -1px 1px 0 $outline, 1px 1px 0 $outline, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+	    }
+	    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		    opacity: 0.4;
+		    text-shadow: none;
+	    }
+       }
+
+      @keyframes grain {
+        0%, 100% { transform:translate(0, 0) }
+        10% { transform:translate(-5%, -10%) }
+        20% { transform:translate(-15%, 5%) }
+        30% { transform:translate(7%, -25%) }
+        40% { transform:translate(-5%, 25%) }
+        50% { transform:translate(-15%, 10%) }
+        60% { transform:translate(15%, 0%) }
+        70% { transform:translate(0%, 15%) }
+        80% { transform:translate(3%, 35%) }
+        90% { transform:translate(-10%, 10%) }
+     }
+
+
+
+</style>
+<div id="minimap">
+
+</div>
+
+<div id="USAttSec1" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE B</div>
+</div>
+<div id="USAttSec2" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE C</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE D</div>
+</div>
+
+<div id="USAttSec3" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE C</div>
+</div>
+<div id="RUDefSec1" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE B</div>
+</div>
+<div id="RUDefSec2" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE C</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE D</div>
+</div>
+<div id="RUDefSec3" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE E</div>
+</div>
+<div id="RUAttSec1" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A</div>
+</div>
+<div id="RUAttSec2" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE B</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE C</div>
+</div>
+<div id="RUAttSec3" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE D</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE E</div>
+</div>
+<div id="USDefSec1" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A</div>
+</div>
+<div id="USDefSec2" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE B</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE C</div>
+</div>
+<div id="USDefSec3" class="infobox">
+    <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE D</div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE E</div>
+</div>
+
+
+</body>
+</html>
