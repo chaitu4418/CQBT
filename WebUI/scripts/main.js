@@ -7,3 +7,7 @@ function hide(){
     $('#minimap').css('display', 'none');
     $("#USAttSec1").css('display', 'none');
 }
+
+function showLoadingScreen(){
+    $('#loadingScreen').css('display', 'block');
+}
