@@ -5,7 +5,6 @@
 </head>
 
 <body>
-
 <style type="text/css">
 
      @font-face {
@@ -95,81 +94,297 @@
 
 
 
+    #loadingScreen{
+        background-image: url(assets/images/mm1.png);
+        background-size:cover;
+        background-position:center;
+        background-color:#fff;
+        position:relative;
+        display:block;
+        margin: auto;
+        opacity:1;
+        width:75%;
+        height:75%;
+        top:10%;
+    }
+
+
+    .header {
+        height: 20%;
+        background-color:black;
+        opacity:0.8
+    }
+    .footer {
+        height: 20%;
+        background-color:black;
+        opacity:0.8;
+    }
+    .body {
+        height: 60%;
+    }
+
+    .mode{
+        font-weight: 600;
+        font-size: 35px;
+        font-stretch:expanded;
+        color:#ff5100;
+        padding-left:6%;
+        padding-top:6%;
+    }
+
+    .mapname{
+        font-weight: 500;
+        font-size: 30px;
+        color:#ffffff;
+        padding-left:6%;
+    }
+
+    .description{
+        font-weight: 100;
+        font-size: 13px;
+        color:#a19d9d;
+        padding-top:10%;
+        text-shadow: 0px 0px 40px 15px #ff8400;
+    }
+
+    .left-col {
+      float: left;
+      width: 50%;
+    }
+    .right-col {
+      float: left;
+      width: 50%;
+    }
+
+        .loading {
+          color: #ffffff;
+          padding-left:80%
+        }
+
+        span {
+          font-size: 20px;
+          opacity: 0;
+        }
+
+        .let1 {
+          animation: flash 1.2s ease-in-out infinite;
+          animation-delay: 1.2s;
+        }
+
+        .let2 {
+          animation: flash 1.2s ease-in-out infinite;
+          animation-delay: 1.3s;
+        }
+
+        .let3 {
+          animation: flash 1.2s ease-in-out infinite;
+          animation-delay: 1.4s;
+        }
+
+        .let4 {
+          animation: flash 1.2s ease-in-out infinite;
+          animation-delay: 1.5s;
+        }
+
+        .let5 {
+          animation: flash 1.2s ease-in-out infinite;
+          animation-delay: 1.6s;
+        }
+
+        .let6 {
+          animation: flash 1.2s ease-in-out infinite;
+          animation-delay: 1.7s;
+        }
+
+        .let7 {
+          animation: flash 1.2s ease-in-out infinite;
+          animation-delay: 1.8s;
+        }
+
+        @keyframes flash {
+            10% {
+                opacity: 0.5;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+
+
 </style>
+
 <div id="minimap">
 
 </div>
 
 <div id="USAttSec1" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE B</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;CAPTURE THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%">&nbsp;&nbsp;OBJECTIVE
+        B
+    </div>
 </div>
 <div id="USAttSec2" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE C</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE D</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;CAPTURE THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE C
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%">&nbsp;&nbsp;OBJECTIVE
+        D
+    </div>
 </div>
 
 <div id="USAttSec3" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE C</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;CAPTURE THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE C
+    </div>
 </div>
 <div id="RUDefSec1" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE B</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;DEFEND THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%">&nbsp;&nbsp;OBJECTIVE
+        B
+    </div>
 </div>
 <div id="RUDefSec2" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE C</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE D</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;DEFEND THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE C
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%">&nbsp;&nbsp;OBJECTIVE
+        D
+    </div>
 </div>
 <div id="RUDefSec3" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE E</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;DEFEND THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE E
+    </div>
 </div>
 <div id="RUAttSec1" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;CAPTURE THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A
+    </div>
 </div>
 <div id="RUAttSec2" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE B</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE C</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;CAPTURE THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE B
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%">&nbsp;&nbsp;OBJECTIVE
+        C
+    </div>
 </div>
 <div id="RUAttSec3" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;CAPTURE THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE D</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE E</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;CAPTURE THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE D
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%">&nbsp;&nbsp;OBJECTIVE
+        E
+    </div>
 </div>
 <div id="USDefSec1" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;DEFEND THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE A
+    </div>
 </div>
 <div id="USDefSec2" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE B</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE C</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;DEFEND THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE B
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%">&nbsp;&nbsp;OBJECTIVE
+        C
+    </div>
 </div>
 <div id="USDefSec3" class="infobox">
     <div class="transmission" style="opacity:1;letter-spacing: 1.5px;">&nbsp; // INCOMING PRIORITY TRANSMISSION</div>
-    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png") height="12%" width="3%">&nbsp;DEFEND THE BASE OBJECTIVES!</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE D</div>
-    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png") height="11%" width="3%" >&nbsp;&nbsp;OBJECTIVE E</div>
+    <div class="mainpoint">&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="12%" width="3%">&nbsp;DEFEND THE
+        BASE OBJECTIVES!
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%"
+                                                 style="padding-top:2%;">&nbsp;&nbsp;OBJECTIVE D
+    </div>
+    <div class="subpoint">&nbsp;&nbsp;&nbsp;<img src="assets/images/diamond.png" ) height="11%" width="3%">&nbsp;&nbsp;OBJECTIVE E</div>
 </div>
 
-
+<div id="loadingScreen">
+    <div class="header">
+        <div class="left-col">
+            <div class="mode" style="text-shadow: 0px 0px 3px #ff8400;">CONQUEST BREAKTHROUGH</div>
+            <div class="mapname" style="text-shadow: 0px 0px 3px #ffffff;">Markaz Monolith</div>
+        </div>
+        <div class="right-col">
+            <div class="description">In Breakthrough, two Teams are pitched together in an Attack/Defend mode.
+                <br/>The Attackers has to push the frontline forward defeating the defending forces, sector by sector.
+            </div>
+        </div>
+    </div>
+    <div class="body"></div>
+    <div class="footer">
+        <div class="loading">
+            <span class="let1">L</span>
+            <span class="let2">O</span>
+            <span class="let3">A</span>
+            <span class="let4">D</span>
+            <span class="let5">I</span>
+            <span class="let6">N</span>
+            <span class="let7">G</span>
+        </div>
+    </div>
+</div>
 </body>
 </html>

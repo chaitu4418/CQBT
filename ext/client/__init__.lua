@@ -9,39 +9,44 @@ function XP4FD_CQBTClient:__init()
         WebUI:Init()
     end)
 
+    Events:Subscribe('Level:LoadingInfo', function(screenInfo)
+        if screenInfo == "Initializing entities for autoloaded sublevels" then
+            WebUI:ExecuteJS("showLoadingScreen()")
+        end
+    end)
+
+    Events:Subscribe('Level:Destroy', function()
+        WebUI:ExecuteJS("hideLoadingScreen()")
+    end)
+
     Events:Subscribe('Partition:Loaded', self, self.OnPartitionLoaded)
 
     Hooks:Install('UI:PushScreen', 999, self, self.OnPushedScreen)
 
-    Events:Subscribe('Player:UpdateInput', function()
-        if InputManager:WentKeyDown(InputDeviceKeys.IDK_Escape) then
-            WebUI:ExecuteJS(string.format("hide()"))
-        end
-        if InputManager:WentKeyDown(InputDeviceKeys.IDK_Escape) then
-            WebUI:ExecuteJS(string.format("show()"))
-        end
-    end)
-
-    Events:Subscribe('Player:Respawn', self, function(player)
-
-        WebUI:ExecuteJS(string.format("show()"))
-
-    end)
-
-    Events:Subscribe('Player:Killed', self, function(player)
-
-        WebUI:ExecuteJS(string.format("hide()"))
-
-    end)
-
 end
 
 function XP4FD_CQBTClient:OnPushedScreen(hook, screen, graphPriority, parentGraph)
-    local screen = UIGraphAsset(screen)
-    if screen.name == 'UI/Flow/Screen/HudTDMScreen' then
-        hook:Pass(self.screens['UI/Flow/Screen/EmptyScreen'], p_GraphPriority, p_ParentGraph)
-        WebUI:ExecuteJS('showLoadingScreen()')
+
+    if screen == nil then
+        return
     end
+
+    local screen = UIGraphAsset(screen)
+
+    print("Pushed: " .. screen.name)
+
+    if screen.name == 'UI/Flow/Screen/SpawnScreenPC' then
+        WebUI:ExecuteJS("hide()")
+    end
+
+    if screen.name == 'UI/Flow/Screen/IngameMenuMP' then
+        WebUI:ExecuteJS("hide()")
+    end
+
+    if screen.name == 'UI/Flow/Screen/HudTDMScreen' then
+        WebUI:ExecuteJS("show()")
+    end
+
 end
 
 function XP4FD_CQBTClient:OnPartitionLoaded(partition)
@@ -55,7 +60,6 @@ function XP4FD_CQBTClient:OnPartitionLoaded(partition)
 
         if l_Instance.typeInfo.name == "UIScreenAsset" then
             local s_Instance = UIGraphAsset(l_Instance)
-            print("Found: " .. s_Instance.name)
             self.screens[s_Instance.name] = UIGraphAsset(l_Instance)
         end
     end

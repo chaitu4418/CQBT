@@ -11,3 +11,7 @@ function hide(){
 function showLoadingScreen(){
     $('#loadingScreen').css('display', 'block');
 }
+
+function showLoadingScreen(){
+    $('#loadingScreen').css('display', 'none');
+}
